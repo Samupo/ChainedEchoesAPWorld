@@ -2,6 +2,7 @@ from worlds.AutoWorld import World
 from .Regions import create_regions
 from .Locations import create_locations, location_table
 from .Items import create_items, item_table
+from .Options import ChainedEchoesOptions, SLOT_DATA_OPTION_NAMES
 
 class ChainedEchoesWorld(World):
     """
@@ -13,7 +14,18 @@ class ChainedEchoesWorld(World):
     location_name_to_id = location_table
     item_name_to_id = item_table
     topology_present = True
-    
+    options_dataclass = ChainedEchoesOptions
+    options: ChainedEchoesOptions
+
+    def generate_early(self):
+        """
+        Resolve the server-provided randomizer seed during AP generation.
+        A YAML value of -1 means AP should generate the seed once and send it in slot data.
+        """
+        self.generated_randomizer_seed = int(self.options.randomizer_seed.value)
+        if self.generated_randomizer_seed == -1:
+            self.generated_randomizer_seed = self.random.randint(0, 2147483647)
+
     def create_regions(self):
         """
         Creates regions and locations for the world.
@@ -27,3 +39,16 @@ class ChainedEchoesWorld(World):
         Populates the item pool with items for the world.
         """
         create_items(self)
+    def fill_slot_data(self):
+        """
+        Sends AP-generated randomizer options and seed to the Chained Echoes client.
+        """
+        slot_data = {client_name: int(getattr(self.options, option_name).value)
+                     for client_name, option_name in SLOT_DATA_OPTION_NAMES.items()}
+
+        if not hasattr(self, "generated_randomizer_seed"):
+            self.generate_early()
+        slot_data["RandomizerSeed"] = self.generated_randomizer_seed
+
+        return slot_data
+

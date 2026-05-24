@@ -1030,7 +1030,8 @@ classification_map = {
 }
 
 # Parse the item data from the text
-current_id = 2000
+ITEM_ID_START = 8500000
+current_id = ITEM_ID_START
 for line in items_txt.strip().splitlines():
     if line.startswith("//"):  # Skip comments
         continue
