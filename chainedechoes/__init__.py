@@ -1,7 +1,8 @@
 from worlds.AutoWorld import World
 from .Regions import create_regions
 from .Locations import create_locations, location_table
-from .Items import create_items, item_table
+from BaseClasses import Item
+from .Items import create_items, item_table, item_data_by_name
 from .Options import ChainedEchoesOptions, SLOT_DATA_OPTION_NAMES
 
 class ChainedEchoesWorld(World):
@@ -34,11 +35,19 @@ class ChainedEchoesWorld(World):
         create_regions(self)
         create_locations(self)
 
+    def create_item(self, name: str) -> Item:
+        """
+        Create a single item by name using the parsed item metadata.
+        """
+        item_data = item_data_by_name[name]
+        return Item(name, item_data.classification, item_data.id, self.player)
+
     def create_items(self):
         """
         Populates the item pool with items for the world.
         """
         create_items(self)
+
     def fill_slot_data(self):
         """
         Sends AP-generated randomizer options and seed to the Chained Echoes client.
