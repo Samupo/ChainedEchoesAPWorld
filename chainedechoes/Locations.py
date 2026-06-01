@@ -39,6 +39,7 @@ Chest,Rohlan Fields S (Chest) #1,rf_2_3_5,Not Missable,Sandworm
 Chest,Rohlan Fields S (Chest) #2,rf_2_3_4,Not Missable,Sandworm
 Chest,Rohlan Fields S (Chest) #3,rf_2_3_3,Not Missable,Sandworm
 Chest,Rohlan Fields S (Chest) #4,rf_2_3_7,Not Missable,Sandworm
+Chest,Rohlan Fields S (Chest) #5,rf_2_3_6,Not Missable,Sandworm
 Chest,Termina Caves (Chest) #1,trm_3,Not Missable,Sandworm
 Chest,Termina Caves (Chest) #2,trm_2,Not Missable,Sandworm
 Chest,Termina Caves (Chest) #3,trm_6,Not Missable,Sandworm
@@ -243,7 +244,7 @@ Chest,Fiorwoods S (Chest) #3,fw_2_3_2,Not Missable,Arlette
 Chest,Fiorwoods SE (Buried),fwburied_3_3,Not Missable,Arlette
 Board,Find 5 Collectibles in Fiorwoods (Board),Board50,Not Missable,Arlette
 Chest,Fiorwoods SE (Chest) #1,fw_3_3_3,Not Missable,Arlette
-Chest,Fiorwoods SE (Chest) #2,fw_3_3_3,Not Missable,Arlette
+Chest,Fiorwoods SE (Chest) #2,fw_3_3_2,Not Missable,Arlette
 Chest,Fiorwoods SE (Shiny) #1,fwshiny_3_3_7,Not Missable,Arlette
 Chest,Fiorwoods SE (Shiny) #2,fwshiny_3_3_8,Not Missable,Arlette
 Chest,Fiorwoods SE (Chest) #3,fw_3_3_5,Not Missable,Arlette
@@ -435,7 +436,7 @@ Boss,Kortara Kondor (Boss) #2,kortaraKondor1,Not Missable,Kondor
 Boss,Kortara Kondor (Boss) #3,kortaraKondor2,Not Missable,Kondor
 // OPEN WORLD SECTION
 Chest,Rohlan Fields SE (Chest) #2,rf_mech_3_3,Not Missable,Fridolyn
-Chest,Rohlan Fields S (Chest) #5,rf_2_3_8,Not Missable,Fridolyn
+Chest,Rohlan Fields S (Chest) #6,rf_2_3_8,Not Missable,Fridolyn
 Chest,Rohlan Fields NW (Chest) #3,rf_1_1_4,Not Missable,Fridolyn
 Chest,Rohlan Fields NW (Chest) #4,rf_1_1_3,Not Missable,Fridolyn
 Chest,Rohlan Fields NW (Chest) #5,rf_mech_1,Not Missable,Fridolyn
@@ -807,7 +808,6 @@ Chest,Marylea Dungeon (Chest) #10,ml_dungeon1_3,Missable,Raphael
 Chest,Marylea Dungeon (Chest) #11,ml_dungeon1_5,Missable,Raphael
 Chest,Marylea Dungeon (Chest) #12,ml_dungeon2_2,Missable,Raphael
 Chest,Marylea Dungeon (Chest) #13,ml_dungeon2_3,Missable,Raphael
-Chest,Marylea Dungeon (Chest) #14,ml_dungeon2_3,Missable,Raphael
 Chest,Marylea Dungeon (Chest) #15,ml_dungeon2_1,Missable,Raphael
 Boss,Raphael (Boss) #1,raphael1,Not Missable,Raphael
 Boss,Raphael (Boss) #2,raphael0,Not Missable,Raphael
@@ -934,7 +934,7 @@ Deal,Clothes & Robes 9 (Deal),Clothes & Robes 9,Not Missable,Memory
 Deal,Nectar (Deal),Nectar,Not Missable,Memory
 Deal,Ambrosia (Deal),Ambrosia,Not Missable,Memory
 Deal,Rubber Duck (Deal),Rubber Duck,Not Missable,Memory
-Deal,Ultimate Material Pack (Deal),Ultra Material Pack,Not Missable,Memory
+Deal,Ultra Material Pack (Deal),Ultra Material Pack,Not Missable,Memory
 Chest,Nhysa (Buried) #3,nhburied_1,Not Missable,Memory
 Board,Defeat 6 Earthworms (Board),Board187,Not Missable,Memory
 Board,Find buried treasures in Nhysa (Board),Board227,Not Missable,Memory

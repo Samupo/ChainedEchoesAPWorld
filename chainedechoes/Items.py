@@ -930,7 +930,6 @@ Opal Ring,Opal Ring,1,Equipment,Filler
 Magic Poleyns,Magic Poleyns,1,Equipment,Filler
 Leaf Hood,Leaf Hood,1,Equipment,Filler
 Friendship Ring,Friendship Ring,1,Equipment,Filler
-Can Machine,Can Machine,1,Equipment,Filler
 Holy Symbol,Holy Symbol,1,Equipment,Filler
 Dancing Shoes,Dancing Shoes,1,Equipment,Filler
 Adrenalin Stone,Adrenalin Stone,1,Equipment,Filler
@@ -1019,6 +1018,7 @@ Crap #1,Crap,1,Item,Trap
 Crap #2,Crap,1,Item,Trap
 Crap #3,Crap,1,Item,Trap
 Crap #4,Crap,1,Item,Trap
+Crap #5,Crap,1,Item,Trap
 '''
 
 # Map string classifications to `ItemClassification`
